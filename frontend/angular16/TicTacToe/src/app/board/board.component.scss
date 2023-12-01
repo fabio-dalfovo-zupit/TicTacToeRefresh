@@ -1,0 +1,12 @@
+$cell-margin: 0.5rem;
+
+.board-cells {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  grid-row-gap: $cell-margin;
+  grid-column-gap: $cell-margin;
+  justify-content: space-around;
+  width: fit-content;
+
+  background-color: aquamarine;
+}
