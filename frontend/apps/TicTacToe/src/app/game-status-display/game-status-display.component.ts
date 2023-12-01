@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { PlayerToPlay } from 'src/libs/tic-tac-toe/player-to-play';
-import { TicTacToeGameService } from 'src/libs/tic-tac-toe/tic-tac-toe-game.service';
+import { PlayerToPlay } from '../../libs/tic-tac-toe/player-to-play';
+import { TicTacToeGameService } from '../../libs/tic-tac-toe/tic-tac-toe-game.service';
 
 @Component({
   selector: 'tic-tac-toe-game-status-display',

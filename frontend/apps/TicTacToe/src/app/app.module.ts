@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { BoardComponent } from './board/board.component';
 import { CellComponent } from './cell/cell.component';
 import { GameStatusDisplayComponent } from './game-status-display/game-status-display.component';
-import { TicTacToeCellSate } from 'src/libs/tic-tac-toe/tic-tac-toe-cell-state';
-import { TicTacToeGameService } from 'src/libs/tic-tac-toe/tic-tac-toe-game.service';
-import { TicTacToeGameUtility } from 'src/libs/tic-tac-toe/tic-tac-toe-game.utility';
+import { TicTacToeCellSate } from '../libs/tic-tac-toe/tic-tac-toe-cell-state';
+import { TicTacToeGameService } from '../libs/tic-tac-toe/tic-tac-toe-game.service';
+import { TicTacToeGameUtility } from '../libs/tic-tac-toe/tic-tac-toe-game.utility';
 
 /** TicTacToeGameService */
 const ticTacToeGameServiceFactory = (gameUtility: TicTacToeGameUtility) => {

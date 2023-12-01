@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { TicTacToeGameService } from 'src/libs/tic-tac-toe/tic-tac-toe-game.service';
+import { TicTacToeGameService } from '../../libs/tic-tac-toe/tic-tac-toe-game.service';
 import { TicTacToeCellOnClick } from '../cell/cell.component';
 
 @Component({
