@@ -1,5 +1,5 @@
 {
-  "name": "TicTacToe",
+  "name": "TicTacToeAngular16",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "generators": {
@@ -7,23 +7,23 @@
       "style": "scss"
     }
   },
-  "sourceRoot": "apps/TicTacToe/src",
+  "sourceRoot": "apps/TicTacToeAngular16/src",
   "prefix": "tic-tac-toe",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "options": {
-        "outputPath": "dist/apps/TicTacToe",
-        "index": "apps/TicTacToe/src/index.html",
-        "main": "apps/TicTacToe/src/main.ts",
+        "outputPath": "dist/apps/TicTacToeAngular16",
+        "index": "apps/TicTacToeAngular16/src/index.html",
+        "main": "apps/TicTacToeAngular16/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/TicTacToe/tsconfig.app.json",
+        "tsConfig": "apps/TicTacToeAngular16/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/TicTacToe/src/favicon.ico",
-          "apps/TicTacToe/src/assets"
+          "apps/TicTacToeAngular16/src/favicon.ico",
+          "apps/TicTacToeAngular16/src/assets"
         ],
-        "styles": ["apps/TicTacToe/src/styles.scss"],
+        "styles": ["apps/TicTacToeAngular16/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -57,10 +57,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "TicTacToe:build:production"
+          "browserTarget": "TicTacToeAngular16:build:production"
         },
         "development": {
-          "browserTarget": "TicTacToe:build:development"
+          "browserTarget": "TicTacToeAngular16:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -68,20 +68,20 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "TicTacToe:build"
+        "browserTarget": "TicTacToeAngular16:build"
       }
     },
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
       "options": {
         "polyfills": ["zone.js", "zone.js/testing"],
-        "tsConfig": "apps/TicTacToe/tsconfig.spec.json",
+        "tsConfig": "apps/TicTacToeAngular16/tsconfig.spec.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/TicTacToe/src/favicon.ico",
-          "apps/TicTacToe/src/assets"
+          "apps/TicTacToeAngular16/src/favicon.ico",
+          "apps/TicTacToeAngular16/src/assets"
         ],
-        "styles": ["apps/TicTacToe/src/styles.scss"],
+        "styles": ["apps/TicTacToeAngular16/src/styles.scss"],
         "scripts": []
       }
     }

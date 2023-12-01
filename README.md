@@ -11,6 +11,8 @@ To support multiple versions of the same application, even with different framew
 
 To create a new **monorepo** project, you need to use the `npx create-nx-workspace@latest` command, but we have an existing application and want to migrate it to monorepo. To do this just `npx nx@latest init --integrated` inside the folder of the project.
 
+In my case, the project name was not what I expected, to change it the command Nx `npx nx g @nrwl/workspace:move --project <current project name> <new project name>` helped me.
+
 ## Angular projects
 
  - v16 - [link to README](./frontend/angular16/README.md)
