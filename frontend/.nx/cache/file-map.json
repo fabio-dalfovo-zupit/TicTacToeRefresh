@@ -1,0 +1,266 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "@angular/animations": "^16.1.0",
+    "@angular/common": "^16.1.0",
+    "@angular/compiler": "^16.1.0",
+    "@angular/core": "^16.1.0",
+    "@angular/forms": "^16.1.0",
+    "@angular/platform-browser": "^16.1.0",
+    "@angular/platform-browser-dynamic": "^16.1.0",
+    "@angular/router": "^16.1.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0",
+    "@angular-devkit/build-angular": "^16.1.8",
+    "@angular-devkit/core": "~16.1.8",
+    "@angular-devkit/schematics": "~16.1.8",
+    "@angular/cli": "~16.1.8",
+    "@angular/compiler-cli": "^16.1.0",
+    "@nx/angular": "17.1.3",
+    "@nx/js": "17.1.3",
+    "@nx/workspace": "17.1.3",
+    "@schematics/angular": "~16.1.8",
+    "@swc-node/register": "~1.6.7",
+    "@swc/core": "~1.3.85",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "nx": "17.1.3",
+    "prettier": "^2.6.2",
+    "typescript": "~5.1.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "TicTacToe": [
+        {
+          "file": "apps/TicTacToe/project.json",
+          "hash": "1285507001020868029"
+        },
+        {
+          "file": "apps/TicTacToe/src/app/app-routing.module.ts",
+          "hash": "15638978050551223935",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/TicTacToe/src/app/app.component.html",
+          "hash": "16532083636946088740"
+        },
+        {
+          "file": "apps/TicTacToe/src/app/app.component.scss",
+          "hash": "11983151531215234309"
+        },
+        {
+          "file": "apps/TicTacToe/src/app/app.component.ts",
+          "hash": "16641408285854625579",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/TicTacToe/src/app/app.module.ts",
+          "hash": "8866037350072116693",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:src/libs/tic-tac-toe/tic-tac-toe-cell-state",
+            "npm:src/libs/tic-tac-toe/tic-tac-toe-game.service",
+            "npm:src/libs/tic-tac-toe/tic-tac-toe-game.utility"
+          ]
+        },
+        {
+          "file": "apps/TicTacToe/src/app/board/board.component.html",
+          "hash": "12399681338598391962"
+        },
+        {
+          "file": "apps/TicTacToe/src/app/board/board.component.scss",
+          "hash": "1808644978736056693"
+        },
+        {
+          "file": "apps/TicTacToe/src/app/board/board.component.ts",
+          "hash": "14015574510085863323",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:src/libs/tic-tac-toe/tic-tac-toe-game.service"
+          ]
+        },
+        {
+          "file": "apps/TicTacToe/src/app/cell/cell.component.html",
+          "hash": "4653294583125798567"
+        },
+        {
+          "file": "apps/TicTacToe/src/app/cell/cell.component.scss",
+          "hash": "8378152933359549795"
+        },
+        {
+          "file": "apps/TicTacToe/src/app/cell/cell.component.ts",
+          "hash": "5252413779447966504",
+          "deps": [
+            "npm:@angular/core",
+            "npm:src/libs/tic-tac-toe/tic-tac-toe-cell-state"
+          ]
+        },
+        {
+          "file": "apps/TicTacToe/src/app/game-status-display/game-status-display.component.html",
+          "hash": "11167884101990073028"
+        },
+        {
+          "file": "apps/TicTacToe/src/app/game-status-display/game-status-display.component.scss",
+          "hash": "6874895236092724629"
+        },
+        {
+          "file": "apps/TicTacToe/src/app/game-status-display/game-status-display.component.ts",
+          "hash": "5646832201472760350",
+          "deps": [
+            "npm:@angular/core",
+            "npm:src/libs/tic-tac-toe/player-to-play",
+            "npm:src/libs/tic-tac-toe/tic-tac-toe-game.service"
+          ]
+        },
+        {
+          "file": "apps/TicTacToe/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/TicTacToe/src/favicon.ico",
+          "hash": "3464744996580215640"
+        },
+        {
+          "file": "apps/TicTacToe/src/index.html",
+          "hash": "6721201780579655290"
+        },
+        {
+          "file": "apps/TicTacToe/src/libs/tic-tac-toe/player-to-play.ts",
+          "hash": "8697737266806534911"
+        },
+        {
+          "file": "apps/TicTacToe/src/libs/tic-tac-toe/tic-tac-toe-cell-state.ts",
+          "hash": "5736402519563365775"
+        },
+        {
+          "file": "apps/TicTacToe/src/libs/tic-tac-toe/tic-tac-toe-game.service.ts",
+          "hash": "601412972841448985",
+          "deps": [
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/TicTacToe/src/libs/tic-tac-toe/tic-tac-toe-game.utility.ts",
+          "hash": "10351787601357784914"
+        },
+        {
+          "file": "apps/TicTacToe/src/main.ts",
+          "hash": "11185739893494900516",
+          "deps": [
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "apps/TicTacToe/src/styles.scss",
+          "hash": "10973695019756135882"
+        },
+        {
+          "file": "apps/TicTacToe/tsconfig.app.json",
+          "hash": "5393585668230053000"
+        },
+        {
+          "file": "apps/TicTacToe/tsconfig.spec.json",
+          "hash": "16019643874266821389"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "17241496168097493888"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "4689145951703824387"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "1332639977160859943"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "2361394871397236592"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "15613880667906485775"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "13294368136717475740"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "11761272470041752234"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "17406702432687230417"
+      },
+      {
+        "file": ".vscode/tasks.json",
+        "hash": "10093397977228577162"
+      },
+      {
+        "file": "README.md",
+        "hash": "5236252315976972648"
+      },
+      {
+        "file": "karma.conf.js",
+        "hash": "9656364725710720620"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "nx.json",
+        "hash": "11830873846862612378"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "17879041032941723325"
+      },
+      {
+        "file": "package.json",
+        "hash": "11501764804663410677"
+      },
+      {
+        "file": "tools/generators/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "1521848782610753920"
+      }
+    ]
+  }
+}
