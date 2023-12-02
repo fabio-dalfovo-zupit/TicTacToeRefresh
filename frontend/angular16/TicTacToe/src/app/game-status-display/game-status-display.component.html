@@ -1,7 +1,0 @@
-<h4 *ngIf="ticTacToeGameService.isGameActive$ | async">
-  Turn of player {{ playerToName(ticTacToeGameService.player$ | async) }}
-</h4>
-<h4 *ngIf="ticTacToeGameService.playerWon$ | async as whoWon">
-  Player {{ playerToName(whoWon) }} won
-</h4>
-<button (click)="onRestartHandler()">Restart</button>
