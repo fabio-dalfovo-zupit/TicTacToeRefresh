@@ -1,0 +1,29 @@
+{
+  "name": "tic-tac-toe-game",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/tic-tac-toe-game/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/tic-tac-toe-game",
+        "main": "libs/tic-tac-toe-game/src/index.ts",
+        "tsConfig": "libs/tic-tac-toe-game/tsconfig.lib.json",
+        "assets": ["libs/tic-tac-toe-game/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/tic-tac-toe-game/**/*.ts",
+          "libs/tic-tac-toe-game/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

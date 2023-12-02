@@ -19,7 +19,9 @@
     "module": "ES2022",
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
-    "paths": {},
+    "paths": {
+      "tic-tac-toe-game": ["libs/tic-tac-toe-game/src/index.ts"]
+    },
     "rootDir": "."
   },
   "angularCompilerOptions": {
