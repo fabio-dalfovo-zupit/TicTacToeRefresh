@@ -1,6 +1,11 @@
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import { TicTacToeGameUtility, TicTacToeBoardCells, TicTacToeCellSate, PlayerToPlay } from '@libs/tic-tac-toe-game';
+import {
+  TicTacToeGameUtility,
+  TicTacToeBoardCells,
+  TicTacToeCellSate,
+  PlayerToPlay,
+} from '@libs/tic-tac-toe-game';
 
 export class TicTacToeGameService {
   /** Utility to manage game */

@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { BoardComponent } from './board/board.component';
 import { CellComponent } from './cell/cell.component';
 import { GameStatusDisplayComponent } from './game-status-display/game-status-display.component';
-import { TicTacToeGameUtility, TicTacToeCellSate } from '@libs/tic-tac-toe-game';
+import {
+  TicTacToeGameUtility,
+  TicTacToeCellSate,
+} from '@libs/tic-tac-toe-game';
 import { TicTacToeGameService } from '../libs/tic-tac-toe/tic-tac-toe-game.service';
 
 /** TicTacToeGameService */
