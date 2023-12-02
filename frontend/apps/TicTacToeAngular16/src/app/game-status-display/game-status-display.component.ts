@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PlayerToPlay } from '@libs/tic-tac-toe-game';
-import { TicTacToeGameService } from '../../libs/tic-tac-toe/tic-tac-toe-game.service';
+import { TicTacToeRxJsService } from '@libs/tic-tac-toe-rx-js-service';
 
 @Component({
   selector: 'tic-tac-toe-game-status-display',
@@ -9,9 +9,9 @@ import { TicTacToeGameService } from '../../libs/tic-tac-toe/tic-tac-toe-game.se
 })
 export class GameStatusDisplayComponent {
   /** Service for the game */
-  public ticTacToeGameService: TicTacToeGameService;
+  public ticTacToeGameService: TicTacToeRxJsService;
 
-  constructor(ticToeGameService: TicTacToeGameService) {
+  constructor(ticToeGameService: TicTacToeRxJsService) {
     this.ticTacToeGameService = ticToeGameService;
   }
 

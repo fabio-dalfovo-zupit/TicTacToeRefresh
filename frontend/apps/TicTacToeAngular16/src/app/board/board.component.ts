@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { TicTacToeGameService } from '../../libs/tic-tac-toe/tic-tac-toe-game.service';
+import { TicTacToeRxJsService } from '@libs/tic-tac-toe-rx-js-service';
 import { TicTacToeCellOnClick } from '../cell/cell.component';
 
 @Component({
@@ -17,9 +17,9 @@ export class BoardComponent {
   /** Size of cells */
   public cellWidth: number = 30;
   /** Service for the game */
-  public ticTacToeGameService: TicTacToeGameService;
+  public ticTacToeGameService: TicTacToeRxJsService;
 
-  constructor(ticToeGameService: TicTacToeGameService) {
+  constructor(ticToeGameService: TicTacToeRxJsService) {
     this.ticTacToeGameService = ticToeGameService;
   }
 
