@@ -15,4 +15,5 @@ In my case, the project name was not what I expected, to change it the command N
 
 ## Angular projects
 
- - v16 - [link to README](./frontend/angular16/README.md)
+ - v16 - [link to README](./frontend/apps/TicTacToeAngular16/README.md)
+ - v16 NgRx - [link to README](./frontend/apps/TicTacToeAngular16NgRx/README.md)
