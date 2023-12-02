@@ -6,7 +6,7 @@ import { TicTacToeCellOnClick } from '../cell/cell.component';
 @Component({
   selector: 'tic-tac-toe-board',
   templateUrl: './board.component.html',
-  styleUrls: ['./board.component.scss'],
+  styleUrls: ['./board.component.scss']
 })
 export class BoardComponent {
   private _unSubscription: Subscription = new Subscription();
@@ -26,11 +26,9 @@ export class BoardComponent {
   ngOnInit(): void {
     // Register active game state change
     this._unSubscription.add(
-      this.ticTacToeGameService.isGameActive$.subscribe(
-        (isGameActive: boolean) => {
-          this._isGameActive = isGameActive;
-        }
-      )
+      this.ticTacToeGameService.isGameActive$.subscribe((isGameActive: boolean) => {
+        this._isGameActive = isGameActive;
+      })
     );
   }
 
@@ -47,12 +45,7 @@ export class BoardComponent {
     }
 
     // Check cell can change
-    if (
-      !this.ticTacToeGameService.canCellChange(
-        params.rowIndex,
-        params.columnIndex
-      )
-    ) {
+    if (!this.ticTacToeGameService.canCellChange(params.rowIndex, params.columnIndex)) {
       console.warn('Not empty cell');
       return;
     }

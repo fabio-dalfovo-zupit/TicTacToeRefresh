@@ -10,7 +10,7 @@ export interface TicTacToeCellOnClick {
 @Component({
   selector: 'tic-tac-toe-cell',
   templateUrl: './cell.component.html',
-  styleUrls: ['./cell.component.scss'],
+  styleUrls: ['./cell.component.scss']
 })
 export class CellComponent {
   /** Size of cell, default value is 20px */
@@ -26,14 +26,13 @@ export class CellComponent {
   @Input() public cellState: TicTacToeCellSate = TicTacToeCellSate.Empty;
 
   /** On user click on button event */
-  @Output() public cellClick: EventEmitter<TicTacToeCellOnClick> =
-    new EventEmitter<TicTacToeCellOnClick>();
+  @Output() public cellClick: EventEmitter<TicTacToeCellOnClick> = new EventEmitter<TicTacToeCellOnClick>();
 
   /** Handle click on the button */
   public onClickHandler(): void {
     this.cellClick.emit(<TicTacToeCellOnClick>{
       rowIndex: this.rowIndex,
-      columnIndex: this.columnIndex,
+      columnIndex: this.columnIndex
     });
   }
 

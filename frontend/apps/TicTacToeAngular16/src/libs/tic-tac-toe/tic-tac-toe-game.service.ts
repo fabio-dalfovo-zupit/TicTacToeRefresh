@@ -1,38 +1,26 @@
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import {
-  TicTacToeGameUtility,
-  TicTacToeBoardCells,
-  TicTacToeCellSate,
-  PlayerToPlay,
-} from '@libs/tic-tac-toe-game';
+import { TicTacToeGameUtility, TicTacToeBoardCells, TicTacToeCellSate, PlayerToPlay } from '@libs/tic-tac-toe-game';
 
 export class TicTacToeGameService {
   /** Utility to manage game */
   private _gameUtility: TicTacToeGameUtility;
 
-  private _boardSubject: BehaviorSubject<TicTacToeBoardCells> =
-    new BehaviorSubject<TicTacToeBoardCells>([]);
+  private _boardSubject: BehaviorSubject<TicTacToeBoardCells> = new BehaviorSubject<TicTacToeBoardCells>([]);
   /** Observable for the board of the game */
-  public board$: Observable<TicTacToeBoardCells> =
-    this._boardSubject.asObservable();
+  public board$: Observable<TicTacToeBoardCells> = this._boardSubject.asObservable();
 
-  private _playerWonSubject: Subject<PlayerToPlay | null> =
-    new Subject<PlayerToPlay | null>();
+  private _playerWonSubject: Subject<PlayerToPlay | null> = new Subject<PlayerToPlay | null>();
   /** Observable for player has won */
-  public playerWon$: Observable<PlayerToPlay | null> =
-    this._playerWonSubject.asObservable();
+  public playerWon$: Observable<PlayerToPlay | null> = this._playerWonSubject.asObservable();
 
-  private _playerSubject: BehaviorSubject<PlayerToPlay> =
-    new BehaviorSubject<PlayerToPlay>(PlayerToPlay.PlayerX);
+  private _playerSubject: BehaviorSubject<PlayerToPlay> = new BehaviorSubject<PlayerToPlay>(PlayerToPlay.PlayerX);
   /** Observable for current player */
   public player$: Observable<PlayerToPlay> = this._playerSubject.asObservable();
 
-  private _isGameActiveSubject: BehaviorSubject<boolean> =
-    new BehaviorSubject<boolean>(true);
+  private _isGameActiveSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
   /** Observable for state of the game. When true, players can play, otherwise the game is stoppen */
-  public isGameActive$: Observable<boolean> =
-    this._isGameActiveSubject.asObservable();
+  public isGameActive$: Observable<boolean> = this._isGameActiveSubject.asObservable();
 
   constructor(board: TicTacToeBoardCells, gameUtility: TicTacToeGameUtility) {
     this._gameUtility = gameUtility;
@@ -80,10 +68,7 @@ export class TicTacToeGameService {
   }
 
   /** Return cell state for coordinates */
-  public getCellState(
-    rowIndex: number,
-    columnIndex: number
-  ): TicTacToeCellSate {
+  public getCellState(rowIndex: number, columnIndex: number): TicTacToeCellSate {
     return this._gameUtility.getCellState(
       /* board */ this._boardSubject.getValue(),
       /* rowIndex */ rowIndex,
@@ -98,8 +83,7 @@ export class TicTacToeGameService {
       return;
     }
 
-    const currentBoardState: TicTacToeBoardCells =
-      this._boardSubject.getValue();
+    const currentBoardState: TicTacToeBoardCells = this._boardSubject.getValue();
     const currentPlayer: PlayerToPlay = this._playerSubject.getValue();
 
     // Save current board state

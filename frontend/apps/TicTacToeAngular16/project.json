@@ -19,10 +19,7 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/TicTacToeAngular16/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/TicTacToeAngular16/src/favicon.ico",
-          "apps/TicTacToeAngular16/src/assets"
-        ],
+        "assets": ["apps/TicTacToeAngular16/src/favicon.ico", "apps/TicTacToeAngular16/src/assets"],
         "styles": ["apps/TicTacToeAngular16/src/styles.scss"],
         "scripts": []
       },
@@ -77,10 +74,7 @@
         "polyfills": ["zone.js", "zone.js/testing"],
         "tsConfig": "apps/TicTacToeAngular16/tsconfig.spec.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/TicTacToeAngular16/src/favicon.ico",
-          "apps/TicTacToeAngular16/src/assets"
-        ],
+        "assets": ["apps/TicTacToeAngular16/src/favicon.ico", "apps/TicTacToeAngular16/src/assets"],
         "styles": ["apps/TicTacToeAngular16/src/styles.scss"],
         "scripts": []
       }

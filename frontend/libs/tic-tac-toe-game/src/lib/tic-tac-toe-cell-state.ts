@@ -5,5 +5,5 @@ export type TicTacToeBoardCells = Array<Array<TicTacToeCellSate>>;
 export enum TicTacToeCellSate {
   Empty,
   X,
-  O,
+  O
 }
