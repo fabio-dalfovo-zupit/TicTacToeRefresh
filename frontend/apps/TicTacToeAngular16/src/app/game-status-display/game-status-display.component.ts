@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlayerToPlay } from '../../libs/tic-tac-toe/player-to-play';
+import { PlayerToPlay } from '@libs/tic-tac-toe-game';
 import { TicTacToeGameService } from '../../libs/tic-tac-toe/tic-tac-toe-game.service';
 
 @Component({

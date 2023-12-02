@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { TicTacToeCellSate } from '../../libs/tic-tac-toe/tic-tac-toe-cell-state';
+import { TicTacToeCellSate } from '@libs/tic-tac-toe-game';
 
 /** Data of onClick event */
 export interface TicTacToeCellOnClick {
