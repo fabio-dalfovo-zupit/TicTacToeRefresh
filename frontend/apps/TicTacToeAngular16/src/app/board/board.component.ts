@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { TicTacToeRxJsService } from '@libs/tic-tac-toe-rx-js-service';
 import { TicTacToeCellOnClick } from '../cell/cell.component';
@@ -8,7 +8,7 @@ import { TicTacToeCellOnClick } from '../cell/cell.component';
   templateUrl: './board.component.html',
   styleUrls: ['./board.component.scss']
 })
-export class BoardComponent {
+export class BoardComponent implements OnInit, OnDestroy {
   private _unSubscription: Subscription = new Subscription();
 
   /** Active state of the game */
