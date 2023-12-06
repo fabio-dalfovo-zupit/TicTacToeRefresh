@@ -1,0 +1,37 @@
+{
+  "name": "tic-tac-toe-ng-rx-service",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/tic-tac-toe-ng-rx-service/src",
+  "prefix": "lib",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/tic-tac-toe-ng-rx-service/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/tic-tac-toe-ng-rx-service/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/tic-tac-toe-ng-rx-service/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/tic-tac-toe-ng-rx-service/**/*.ts",
+          "libs/tic-tac-toe-ng-rx-service/**/*.html",
+          "libs/tic-tac-toe-ng-rx-service/package.json"
+        ]
+      }
+    }
+  }
+}
