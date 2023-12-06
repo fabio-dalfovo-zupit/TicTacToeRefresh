@@ -16,7 +16,7 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/TicTacToeAngular16NgRx/tsconfig.app.json",
         "assets": ["apps/TicTacToeAngular16NgRx/src/favicon.ico", "apps/TicTacToeAngular16NgRx/src/assets"],
-        "styles": ["apps/TicTacToeAngular16NgRx/src/styles.css"],
+        "styles": ["apps/TicTacToeAngular16NgRx/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
