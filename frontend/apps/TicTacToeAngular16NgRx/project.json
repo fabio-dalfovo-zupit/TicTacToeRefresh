@@ -1,0 +1,60 @@
+{
+  "name": "TicTacToeAngular16NgRx",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "tic-tac-toe",
+  "sourceRoot": "apps/TicTacToeAngular16NgRx/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser-esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/TicTacToeAngular16NgRx",
+        "index": "apps/TicTacToeAngular16NgRx/src/index.html",
+        "main": "apps/TicTacToeAngular16NgRx/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/TicTacToeAngular16NgRx/tsconfig.app.json",
+        "assets": ["apps/TicTacToeAngular16NgRx/src/favicon.ico", "apps/TicTacToeAngular16NgRx/src/assets"],
+        "styles": ["apps/TicTacToeAngular16NgRx/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "TicTacToeAngular16NgRx:build:production"
+        },
+        "development": {
+          "browserTarget": "TicTacToeAngular16NgRx:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "TicTacToeAngular16NgRx:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/TicTacToeAngular16NgRx/**/*.ts", "apps/TicTacToeAngular16NgRx/**/*.html"]
+      }
+    }
+  }
+}
